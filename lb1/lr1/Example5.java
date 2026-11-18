@@ -1,15 +1,22 @@
-package lr1;
-
 import java.util.Scanner;
-import java.time.LocalDate;
+
 public class Example5 {
-    static void main() {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Year: ");
-        int Year = in.nextInt();
+        System.out.println("Input name: ");
+        String name = in.nextLine();
 
-        System.out.print(LocalDate.now().getYear()-Year);
+        System.out.println("Input age: ");
+        int age = in.nextInt();
+
+        System.out.println("Input height: ");
+        float height = in.nextFloat();
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Height: " + height);
+        in.close();
 
     }
 }

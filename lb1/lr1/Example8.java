@@ -2,17 +2,19 @@ package lr1;
 
 import java.util.Scanner;
 
-public class Example8
-{
+public class Example3 {
     static void main() {
         Scanner in = new Scanner(System.in);
-        System.out.print("First num: ");
-        int num1 = in.nextInt();
+        System.out.println("Input day of the week: ");
+        String dayoftheweek = in.nextLine();
 
+        System.out.println("Input month: ");
+        String month = in.nextLine();
 
-        System.out.print("Second num: ");
-        int num2 = in.nextInt();
+        System.out.println("Input day: ");
+        int day = in.nextInt();
 
-        System.out.print(num1+num2);
+        System.out.printf("Date: %s %s %d", dayoftheweek, month, day);
+        in.close();
     }
 }

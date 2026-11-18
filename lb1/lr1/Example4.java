@@ -1,19 +1,14 @@
-package lr1;
-
 import java.util.Scanner;
 
 public class Example4 {
-    static void main() {
+    public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Print month: ");
-        String month = in.nextLine();
+        System.out.println("Input a number:");
+        int num = in.nextInt();
 
-        System.out.print("Print amount days: ");
-        int days = in.nextByte();
-
-        System.out.printf("Month %s amount days: %d", month, days);
+        System.out.println("Your number" + num);
         in.close();
-
     }
 }

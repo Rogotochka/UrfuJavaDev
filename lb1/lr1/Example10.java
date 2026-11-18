@@ -1,17 +1,15 @@
 package lr1;
 
 import java.util.Scanner;
-
-public class Example10 {
+import java.time.LocalDate;
+public class Example5 {
     static void main() {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Write num1: ");
-        int num1 = in.nextInt();
+        System.out.print("Year: ");
+        int Year = in.nextInt();
 
-        System.out.print("Write num2: ");
-        int num2 = in.nextInt();
+        System.out.print(LocalDate.now().getYear()-Year);
 
-        System.out.printf("%d,%d",num1+num2,num1-num2);
     }
 }

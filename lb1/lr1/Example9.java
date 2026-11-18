@@ -2,13 +2,18 @@ package lr1;
 
 import java.util.Scanner;
 
-public class Example9 {
+public class Example4 {
     static void main() {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Write num: ");
-        int num = in.nextInt();
+        System.out.print("Print month: ");
+        String month = in.nextLine();
 
-        System.out.printf("%d,%d,%d",num-1,num,num+1);
+        System.out.print("Print amount days: ");
+        int days = in.nextByte();
+
+        System.out.printf("Month %s amount days: %d", month, days);
+        in.close();
+
     }
 }
